@@ -1,0 +1,44 @@
+{
+  "name": "weshouldlearn.com",
+  "version": "0.1.0",
+  "description": "The WeShouldLearn.com public website",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StoneCypher/WeShouldLearn.com.git"
+  },
+  "keywords": [
+    "WeShouldLearn",
+    "WeShouldLearn.com",
+    "tutorial",
+    "website"
+  ],
+  "author": "John Haugeland <stonecypher@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/StoneCypher/WeShouldLearn.com/issues"
+  },
+  "homepage": "https://github.com/StoneCypher/WeShouldLearn.com#readme",
+  "devDependencies": {
+    "babel-eslint": "^6.1.2",
+    "browserify": "^13.1.0",
+    "del": "^2.2.2",
+    "eslint-plugin-react": "^6.2.0",
+    "event-stream": "^3.3.4",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-eslint": "^3.0.1",
+    "gulp-jsdoc": "^0.1.5",
+    "gulp-less": "^3.1.0",
+    "gulp-mocha": "^3.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.0.0",
+    "highlight.js": "^9.6.0",
+    "jsdoc": "^3.4.0",
+    "mocha-silent-reporter": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
