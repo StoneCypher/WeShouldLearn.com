@@ -20,7 +20,7 @@ body {
   color: #3a4a4d;
 }
 #page_frame {
-  max-width: 55em;
+  max-width: 53.5em;
   margin: 3em auto;
 }
 #page_frame > ol,
@@ -34,6 +34,14 @@ body {
 }
 #page_frame > ul {
   padding: 0.675em 2em;
+}
+#page_frame > * > li {
+  /* that is, second-level lists */
+  margin-bottom: 0.675em;
+}
+#page_frame > * > li:last-child {
+  /* that is, second-level lists */
+  margin-bottom: 0;
 }
 ol,
 ul {
