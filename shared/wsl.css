@@ -26,8 +26,14 @@ body {
 #page_frame > ol,
 #page_frame > ul {
   /* that is, top-level lists */
-  margin-left: 2em;
-  margin-right: 2em;
+  padding: 0.675em 2.5em;
+  background-color: rgba(58, 74, 77, 0.05);
+}
+#page_frame > ol {
+  padding: 0.675em 2.5em;
+}
+#page_frame > ul {
+  padding: 0.675em 2em;
 }
 ol,
 ul {
@@ -61,6 +67,26 @@ ol ul li:before,
 ul ol li:before,
 ul ul li:before {
   opacity: 0.3;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  border-bottom: 1px solid;
+}
+h1 {
+  border-bottom-color: rgba(58, 74, 77, 0.5);
+}
+h2 {
+  border-bottom-color: rgba(58, 74, 77, 0.3);
+}
+h3,
+h4,
+h5,
+h6 {
+  border-bottom-color: rgba(58, 74, 77, 0.2);
 }
 h1,
 h2,
