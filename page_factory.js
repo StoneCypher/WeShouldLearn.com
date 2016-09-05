@@ -4,22 +4,10 @@ const fs   = require('fs'),
 
       hljs = require('highlight.js'),
       mdm  = require('meta-marked');
-//      rnd  = mdm._marked.Renderer();
 
 const highlight = (code, lang) => `<div class="hljs">${hljs.highlight(lang, code).value.trim()}</div>`;
-/*
-rnd.heading = function (text, level) {
-  var escapedText = text.toLowerCase().replace(/[^\w]+/g, '-');
 
-  return '<h' + level + '><a name="' +
-                escapedText +
-                 '" class="anchor" href="#' +
-                 escapedText +
-                 '"><span class="header-link"></span></a>' +
-                  text + '</h' + level + '>';
-};
-*/
-mdm.setOptions({ highlight: highlight/*, renderer: rnd*/ });
+mdm.setOptions({ highlight: highlight });
 
 
 
