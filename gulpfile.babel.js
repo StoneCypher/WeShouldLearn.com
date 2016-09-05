@@ -249,6 +249,18 @@ gulp.task('default',     ['build']);
 
 
 
+gulp.task('publish', ['build-extra'], function(done_cb) {
+
+    var ghpages = require('gh-pages');
+    ghpages.publish('./dist', () => done_cb());
+
+});
+
+
+
+
+
+/*
 gulp.task('publish', ['build-extra'], function() {
 
     cmd('git add . -A && git commit -m "automated publish commit" && git push origin master');
@@ -259,7 +271,7 @@ gulp.task('publish', ['build-extra'], function() {
     cmd(`git push origin ${id}:gh-pages --force`);
 
 });
-
+*/
 
 
 
