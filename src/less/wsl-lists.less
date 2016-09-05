@@ -1,0 +1,41 @@
+
+#page_frame > ol,
+#page_frame > ul { /* that is, top-level lists */
+    margin-left  : @hgap;
+    margin-right : @hgap;
+}
+
+ol, ul {
+    list-style    : none; 
+    counter-reset : num;
+}
+
+ol>li:before {
+    content           : counter(num) '. ';
+    counter-increment : num;
+}
+
+ol ol > li:before {
+    content : counters(num, '.') ' ';
+}
+
+ul li:before { content: '\2022'; } /* • bullet */
+
+ol>li:before,
+ul>li:before {
+    width             : 4em; 
+    color             : @gray;
+    opacity           : 0.5;
+    display       : inline-block;
+    width         : @counterWidth;
+    margin-left   : -1 * (@counterWidth + @counterGap);
+    padding-right : @counterGap;
+    text-align    : right;
+}
+
+ol ol li:before,
+ol ul li:before,
+ul ol li:before,
+ul ul li:before {
+    opacity : 0.3;
+}

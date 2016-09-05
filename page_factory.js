@@ -5,7 +5,7 @@ const fs   = require('fs'),
       hljs = require('highlight.js'),
       mdm  = require('meta-marked');
 
-mdm.setOptions({ highlight: (code, lang) => `<div class="hljs">${hljs.highlight(lang, code).value}</div>` });
+mdm.setOptions({ highlight: (code, lang) => `<div class="hljs">${hljs.highlight(lang, code).value.trim()}</div>` });
 
 
 

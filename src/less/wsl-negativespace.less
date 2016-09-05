@@ -1,0 +1,14 @@
+
+@import (once) 'wsl-metrics';
+
+h1, h2, h3, h4, h5, h6, p, ol, ul, pre, div { margin: 0; padding: 0; line-height: @lineHeight; }
+
+ol+*, *+ol, ul+*, *+ul, *+p, p+*            { margin-top  : @vgap; }
+
+h1+*, h2+*, h3+*, h4+*, h5+*, h6+*          { margin-top  : @vgap; }
+*+h1, *+h2, *+h3, *+h4, *+h5, *+h6          { margin-top  : @vgap * 2; }
+
+li                                          { margin-top  : @vgap / 4; }
+li li                                       { margin-left : @hgap; }
+
+p                                           { text-indent : @hgap * 2; }

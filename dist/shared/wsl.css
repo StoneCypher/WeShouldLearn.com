@@ -1,3 +1,116 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+code,
+code *,
+pre,
+pre *,
+tt,
+kbd,
+samp {
+  font-family: 'Inconsolata', monospace;
+}
+/* re: the physical surrounding block; */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: #f9fbfb;
+  color: #3a4a4d;
+}
+#page_frame {
+  max-width: 55em;
+  margin: 2em auto;
+}
+#page_frame > ol,
+#page_frame > ul {
+  /* that is, top-level lists */
+  margin-left: 2em;
+  margin-right: 2em;
+}
+ol,
+ul {
+  list-style: none;
+  counter-reset: num;
+}
+ol > li:before {
+  content: counter(num) '. ';
+  counter-increment: num;
+}
+ol ol > li:before {
+  content: counters(num, '.') ' ';
+}
+ul li:before {
+  content: '\2022';
+}
+/* • bullet */
+ol > li:before,
+ul > li:before {
+  width: 4em;
+  color: #3a4a4d;
+  opacity: 0.5;
+  display: inline-block;
+  width: 8em;
+  margin-left: -8.5em;
+  padding-right: 0.5em;
+  text-align: right;
+}
+ol ol li:before,
+ol ul li:before,
+ul ol li:before,
+ul ul li:before {
+  opacity: 0.3;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+pre,
+div {
+  margin: 0;
+  padding: 0;
+  line-height: 1.35em;
+}
+ol + *,
+* + ol,
+ul + *,
+* + ul,
+* + p,
+p + * {
+  margin-top: 1.35em;
+}
+h1 + *,
+h2 + *,
+h3 + *,
+h4 + *,
+h5 + *,
+h6 + * {
+  margin-top: 1.35em;
+}
+* + h1,
+* + h2,
+* + h3,
+* + h4,
+* + h5,
+* + h6 {
+  margin-top: 2.7em;
+}
+li {
+  margin-top: 0.3375em;
+}
+li li {
+  margin-left: 2em;
+}
+p {
+  text-indent: 4em;
+}
+/* highlighter theme */
 /*
 Date: 24 Fev 2015
 Author: Pedro Oliveira <kanytu@gmail . com>
@@ -65,6 +178,7 @@ Author: Pedro Oliveira <kanytu@gmail . com>
   font-weight: bold;
 }
 
+/* upper right hand corner ribbon */
 /**
  * "Fork me on GitHub" CSS ribbon v0.2.0 | MIT License
  * https://github.com/simonwhitaker/github-fork-ribbon-css
