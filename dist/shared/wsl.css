@@ -21,7 +21,7 @@ body {
 }
 #page_frame {
   max-width: 55em;
-  margin: 2em auto;
+  margin: 3em auto;
 }
 #page_frame > ol,
 #page_frame > ul {
