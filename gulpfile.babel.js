@@ -175,7 +175,7 @@ gulp.task('uglify', ['setup', 'browserify'], function() {
 
 gulp.task('build-html', ['setup'], function() {
 
-    return gulp.src(['src/pages/**/*.md'])
+    return gulp.src(['pages/**/*.md'])
         .pipe(gulp_factory(page_template))
         .pipe(rename({extname: '.html'}))
         .pipe(gulp.dest('./build'))
@@ -255,46 +255,3 @@ gulp.task('publish', ['build-extra'], function(done_cb) {
     ghpages.publish('./dist', () => done_cb());
 
 });
-
-
-
-
-
-/*
-gulp.task('publish', ['build-extra'], function() {
-
-    cmd('git add . -A && git commit -m "automated publish commit" && git push origin master');
-
-    const obj_id = cmd('git subtree split --prefix dist master'),
-          id     = `${obj_id}`.trim();
-
-    cmd(`git push origin ${id}:gh-pages --force`);
-
-});
-*/
-
-
-
-
-/*
-gulp.task('publish', ['build-extra'], function() {
-
-    cmd('git add . -A && git commit -m "automated publish commit" && git push origin master');
-
-
-// or
-
-    cmd('git add . -A');
-    cmd('git commit -m "automated publish commit"');
-    cmd('git push origin master');
-    cmd('git checkout gh-pages');
-    cmd('git merge master');
-//    id = cmd('git subtree split --prefix dist master');
-    cmd('git push origin gh-pages:gh-pages --force');
-//    cmd(`git push origin ${id}:gh-pages --force`);
-//    cmd('git push origin `git subtree split --prefix dist master`:gh-pages --force');
-//    cmd('git add . && git commit -m "automated publish commit" && git push origin master && git subtree push --prefix dist origin gh-pages');
-    // todo whargarbl: make gh pages branch push happen here
-
-});
-*/

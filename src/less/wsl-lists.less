@@ -1,13 +1,20 @@
 
 #page_frame > ol,
 #page_frame > ul { /* that is, top-level lists */
-    margin-left  : @hgap;
-    margin-right : @hgap;
+    padding          : @vgap/2 @hgap*1.25;
+    background-color : fade(@gray, 5%);
 }
 
+#page_frame > ol { padding : @vgap/2 @hgap*1.25; }
+#page_frame > ul { padding : @vgap/2 @hgap; }
+
+
+
+
+
 ol, ul {
-    list-style    : none; 
-    counter-reset : num;
+    list-style       : none; 
+    counter-reset    : num;
 }
 
 ol>li:before {

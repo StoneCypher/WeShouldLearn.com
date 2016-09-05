@@ -4,9 +4,22 @@ const fs   = require('fs'),
 
       hljs = require('highlight.js'),
       mdm  = require('meta-marked');
+//      rnd  = mdm._marked.Renderer();
 
-mdm.setOptions({ highlight: (code, lang) => `<div class="hljs">${hljs.highlight(lang, code).value.trim()}</div>` });
+const highlight = (code, lang) => `<div class="hljs">${hljs.highlight(lang, code).value.trim()}</div>`;
+/*
+rnd.heading = function (text, level) {
+  var escapedText = text.toLowerCase().replace(/[^\w]+/g, '-');
 
+  return '<h' + level + '><a name="' +
+                escapedText +
+                 '" class="anchor" href="#' +
+                 escapedText +
+                 '"><span class="header-link"></span></a>' +
+                  text + '</h' + level + '>';
+};
+*/
+mdm.setOptions({ highlight: highlight/*, renderer: rnd*/ });
 
 
 
@@ -37,7 +50,7 @@ function gulp_factory(template) {
 
 function page_factory(template, content, provided_defaults) {
 
-    var args = mdm(content),
+    var args = mdm(content.trim()),
         defs = Object.assign({}, template_defaults, (provided_defaults || {}) );
 
     return apply_template(template, args.html, args.meta, defs);
