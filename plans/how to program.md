@@ -15,9 +15,6 @@
 | JS | Node REPL | node-rogue | Objects 1: objects as single objects; monsters |
 | JS | Node REPL | node-rogue | Draw a stats panel |
 | JS | Node REPL | node-rogue | Six completely random attributes |
-| Env | | | Setting up a github account |
-| Env | | | Setting up git locally |
-| Env | | | Moving node-rogue into github |
 | JS | Node REPL | node-rogue | Functions 2: state-parameterized functions; `double()`; health counters | 
 | JS | Node REPL | node-rogue | If/else; is-live on stats panel (currently always-yes) |
 | JS | Node REPL | node-rogue | Objects 2: game items: simple weapons - daggers only |
@@ -29,13 +26,17 @@
 | JS | Node | node-rogue | Moving to using the code from a console environment | 
 | JS | Node TTY | node-rogue | Consuming keypresses; auto-updating the player's position; auto-redraw | 
 | JS | Node TTY | node-rogue | Preventing the player from making impossible moves | 
+| Env | | | Setting up a github account |
+| Env | | | Setting up git locally |
+| Env | | | Moving node-rogue into github |
+| JS | Node TTY | node-rogue | Picking up treasure | 
+| JS | Node TTY | node-rogue | Basic conflict: you hit them, they die | 
 | JS | Node TTY | node-rogue | Objects 3: objects as containers; moving the game global state into an object |
 | JS | Node TTY | node-rogue | Randomness 2: list selection - more than just daggers |
 | JS | Node TTY | node-rogue | Monster movement 1: completely random synced movement | 
 | JS | Node TTY | node-rogue | Monster movement 2: preventing impossible monster moves | 
 | JS | Node TTY | node-rogue | Monster movement 3: bee-lining |
 | JS | Node TTY | node-rogue | Monster movement 4: multiple movement brains: random, bee-line, sit-still |
-| JS | Node TTY | node-rogue | Basic conflict: you hit them, they die | 
 | JS | Node TTY | node-rogue | Better conflict: hit points; they fight back; missing | 
 | JS | Node TTY | node-rogue | Colors; `colors` JS module; Installing modules with `npm`; color message line | 
 | JS | Node TTY | node-rogue | Color map |
