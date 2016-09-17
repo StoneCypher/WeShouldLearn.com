@@ -13,11 +13,15 @@
 | JS | Node REPL | node-rogue | Functions 1: simple functions; `double()`; global turn counter | 
 | JS | Node REPL | node-rogue | Randomness 1: dice |
 | JS | Node REPL | node-rogue | Objects 1: objects as single objects; monsters |
+| JS | Node REPL | node-rogue | Draw a stats panel |
+| JS | Node REPL | node-rogue | Six completely random attributes |
+| Env | | | Setting up a github account |
+| Env | | | Setting up git locally |
+| Env | | | Moving node-rogue into github |
 | JS | Node REPL | node-rogue | Functions 2: state-parameterized functions; `double()`; health counters | 
+| JS | Node REPL | node-rogue | If/else; is-live on stats panel (currently always-yes) |
 | JS | Node REPL | node-rogue | Objects 2: game items: simple weapons - daggers only |
 | JS | Node REPL | node-rogue | Functions 3: functions as object members; weapons determining damage | 
-| JS | Node REPL | node-rogue | Objects 3: objects as containers; moving the game global state into an object |
-| JS | Node REPL | node-rogue | Randomness 2: list selection - more than just daggers |
 | JS | Node REPL | node-rogue | Arrays; simple monster list |
 | JS | Node REPL | node-rogue | `Array.map()`; acting over the monsters |
 | JS | Node REPL | node-rogue | Template strings; better `console.log`; screen log; game event messages | 
@@ -25,6 +29,8 @@
 | JS | Node | node-rogue | Moving to using the code from a console environment | 
 | JS | Node TTY | node-rogue | Consuming keypresses; auto-updating the player's position; auto-redraw | 
 | JS | Node TTY | node-rogue | Preventing the player from making impossible moves | 
+| JS | Node TTY | node-rogue | Objects 3: objects as containers; moving the game global state into an object |
+| JS | Node TTY | node-rogue | Randomness 2: list selection - more than just daggers |
 | JS | Node TTY | node-rogue | Monster movement 1: completely random synced movement | 
 | JS | Node TTY | node-rogue | Monster movement 2: preventing impossible monster moves | 
 | JS | Node TTY | node-rogue | Monster movement 3: bee-lining |
@@ -34,7 +40,7 @@
 | JS | Node TTY | node-rogue | Colors; `colors` JS module; Installing modules with `npm`; color message line | 
 | JS | Node TTY | node-rogue | Color map |
 | JS | Node TTY | node-rogue | Rudimentary static map generation | 
-| JS | Node TTY | node-rogue | Much larger static map generation; scrolling | 
+| JS | Node TTY | node-rogue | `for loop`s; Much larger static map generation; scrolling | 
 | JS | Node TTY | node-rogue | Clearing the screen between game steps | 
 | JS | Node TTY | node-rogue | Fitting the console | 
 | JS | Node TTY | node-rogue | Healing | 
