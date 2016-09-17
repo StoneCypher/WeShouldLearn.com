@@ -3,7 +3,7 @@
 | Lang | Env | Arc | Topic |
 |------|-----|-----|-------|
 | | | | Introduction |
-| JS | | What is JS; browser vs node | 
+| JS | | | What is JS; browser vs node | 
 | Env | | | Starting a terminal; Installing node |
 | Env | Node | | Using Node; Starting/stopping the REPL |
 | JS | Node REPL | | Node REPL: math; variables | 
